@@ -55,7 +55,6 @@ app.get("/api/getUser/:id", (req, res) => {
     .catch((err) => console.log(err));
 });
 
-
 app.put("/api/updateUser/:id", (req, res) => {
   const id = req.params.id;
   UserModel.findByIdAndUpdate(
